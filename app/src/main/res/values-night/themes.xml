@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme untuk mode gelap -->
+    <style name="Theme.SoedCare" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/green_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/green_500</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <!-- ✅ Tambahan agar EditText tetap abu-abu di dark mode -->
+        <item name="android:editTextColor">#333333</item>
+        <item name="android:textColorPrimary">#333333</item>
+    </style>
+</resources>

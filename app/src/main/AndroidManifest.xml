@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permission untuk kamera -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission untuk storage dengan maxSdkVersion untuk Android 10+ -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- Permission untuk Android 13+ (API 33+) -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <!-- Deklarasi fitur kamera (opsional) -->
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_soedcare"
+        android:label="SoedCare"
+        android:roundIcon="@mipmap/ic_soedcare"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SoedCare"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:label="@string/app_name"/>
+
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:theme="@style/Theme.SoedCare"/>
+        <activity
+            android:name=".ArtikelActivity"
+            android:label="Info Artikel"
+            android:theme="@style/Theme.SoedCare" />
+
+        <activity
+            android:name=".BookingActivity"
+            android:label="Booking Layanan"
+            android:theme="@style/Theme.SoedCare" />
+
+        <activity
+            android:name=".AntrianActivity"
+            android:label="Cek Antrian"
+            android:theme="@style/Theme.SoedCare" />
+
+        <activity
+            android:name=".FaskesActivity"
+            android:label="Fasilitas Kesehatan"
+            android:theme="@style/Theme.SoedCare" />
+        <activity
+            android:name=".AskSoedcareActivity"
+            android:label="Tanya SoedCare"
+            android:exported="false" />
+
+        <activity
+            android:name=".ContainerActivity"
+            android:exported="false" />
+
+
+
+
+    </application>
+</manifest>
