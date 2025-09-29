@@ -38,7 +38,7 @@ Dengan SOEDCARE, diharapkan akses masyarakat terhadap layanan publik dapat lebih
 1. **Clone Repositori**
    ```bash
    git clone https://github.com/IrfanRomadhonWidodo/IrfanRomadhonWidodo_H1D023023-DefitBagusSaputra_H1D023036
-   cd SoedCare
+   cd IrfanRomadhonWidodo_H1D023023-DefitBagusSaputra_H1D023036
 2. **Buka Project & Update SDK**
     - Jalankan **Android Studio**.  
     - Pilih **Open Project** dan arahkan ke folder `SoedCare`.  
