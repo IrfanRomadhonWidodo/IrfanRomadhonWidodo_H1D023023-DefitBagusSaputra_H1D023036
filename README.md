@@ -41,7 +41,7 @@ Dengan SOEDCARE, diharapkan akses masyarakat terhadap layanan publik dapat lebih
    cd IrfanRomadhonWidodo_H1D023023-DefitBagusSaputra_H1D023036
 2. **Buka Project & Update SDK**
     - Jalankan **Android Studio**.  
-    - Pilih **Open Project** dan arahkan ke folder `SoedCare`.  
+    - Pilih **Open Project** dan arahkan ke folder `IrfanRomadhonWidodo_H1D023023-DefitBagusSaputra_H1D023036`.  
     - Setelah project terbuka, buka file `app/build.gradle`.  
     - Ubah konfigurasi SDK menjadi:
   ```gradle
